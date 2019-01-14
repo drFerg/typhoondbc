@@ -1,0 +1,92 @@
+.fb-embed {
+    width: 1000px;
+    height: 550px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .fb-embed {
+      width: 800px;
+      height: 450px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .fb-embed {
+      width: 550px;
+      height: 309px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .fb-embed {
+      width: 400px;
+      height: 225px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .fb-embed {
+      width: 80%;
+      height: 200px;
+  }
+}
+#services .section-content {
+
+}
+#services .section-content .service {
+  width: 100%;
+  margin-top: 2em;
+}
+#services .section-content .service .service-entry {
+width: 100%;
+line-height: 26px;
+color: #010507;;
+font-size: 16px;
+font-family: "Lato";
+font-weight: 400;
+}
+
+.home-content__main {
+  margin: 0 auto;
+  padding-left: 25px;
+}
+
+.insta {
+  margin-right: .5%;
+  margin-bottom: .5%;
+}
+/*.insta-img {
+  width: 270px;
+}*/
+@media (min-width: 300px) {
+    .card-columns {
+        column-count: 3;
+    }
+  /*  .insta-card {
+      width: 25%;
+    }*/
+}
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+

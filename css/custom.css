@@ -46,7 +46,7 @@
 }*/
 @media (min-width: 300px) {
     .card-columns {
-        column-count: 3;
+        column-count: 2;
     }
   /*  .insta-card {
       width: 25%;
@@ -54,13 +54,13 @@
 }
 @media (min-width: 576px) {
     .card-columns {
-        column-count: 4;
+        column-count: 2;
     }
 }
 
 @media (min-width: 768px) {
     .card-columns {
-        column-count: 4;
+        column-count: 3;
     }
 }
 

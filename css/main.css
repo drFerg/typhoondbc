@@ -1457,11 +1457,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-logo a {
     display: block;
-    margin: 20px 0 0 0;
+    margin: 0 0 5px 0;
     padding: 0;
     outline: 0;
     border: none;
-    width: 80px;
+    width: 150px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }

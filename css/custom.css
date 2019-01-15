@@ -30,21 +30,7 @@
       height: 200px;
   }
 }
-#services .section-content {
 
-}
-#services .section-content .service {
-  width: 100%;
-  margin-top: 2em;
-}
-#services .section-content .service .service-entry {
-width: 100%;
-line-height: 26px;
-color: #010507;;
-font-size: 16px;
-font-family: "Lato";
-font-weight: 400;
-}
 
 .home-content__main {
   margin: 0 auto;
@@ -90,3 +76,106 @@ font-weight: 400;
     }
 }
 
+
+/* 06. Services */
+#services {
+width: 100%;
+padding: 65px 0 75px 0;
+text-align: center;
+}
+
+#services .section-header {
+width: 100%;
+margin-bottom: 65px;
+}
+
+#services .section-content {
+width: 100%;
+}
+#services .section-content .service {
+  width: 100%;
+  margin-top: 2em;
+}
+
+#services .section-content .service .service-icon {
+width: 100%;
+margin-bottom: 10px;
+font-size: 35px;
+}
+
+#services .section-content .service .service-icon .fa {
+display: block;
+color: #ed6624;
+
+}
+
+#services .section-content .service .service-title h3{
+width: 100%;
+margin-bottom: 20px;
+color: #ed6624;
+}
+
+#services .section-content .service .service-entry {
+width: 100%;
+line-height: 26px;
+color: #8c9597;
+font-size: 16px;
+font-family: "Lato";
+font-weight: 400;
+}
+
+#services .widget_illdy_service {
+margin-top: 40px;
+}
+
+#services .widget_illdy_service:nth-child(1), #services .widget_illdy_service:nth-child(2), #services .widget_illdy_service:nth-child(3) {
+margin-top: 0;
+}
+
+
+.dark-about {
+  background-color: #111111;
+}
+
+#map {
+        height: 320px;
+}
+
+.map-info {
+  background-color: #242f3e;
+  color: #ed6624;
+}
+
+  /*style the box which holds the text of the information window*/  
+         .gm-style .gm-style-iw {
+            background-color: #252525 !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            min-height: 120px !important;
+            padding-top: 10px;
+            display: block !important;
+         }    
+
+         /*style the paragraph tag*/
+         .gm-style .gm-style-iw #google-popup p{
+            padding: 10px;
+         }
+
+
+        /*style the annoying little arrow at the bottom*/
+        .gm-style div div div div div div div div {
+            background-color: #252525 !important;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        /*style the link*/
+        .gm-style div div div div div div div div a {
+            color: #f1f1f1;
+            font-weight: bold;
+        }

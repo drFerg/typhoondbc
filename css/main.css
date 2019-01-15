@@ -75,7 +75,7 @@ html, body {
 
 body {
     background: #111111;
-    font-family: "lora-regular", serif;
+    /*font-family: "lora-regular", serif;*/
     font-size: 1.7rem;
     font-style: normal;
     font-weight: normal;
@@ -2205,7 +2205,19 @@ html.no-csstransitions .home-content__main {
     position: relative;
 }
 
+.s-about-dark {
+    padding-top: 16.2rem;
+    padding-bottom: 9rem;
+    background-color: #111111;
+    color: #ed6624;
+    position: relative;
+}
+
 .s-about .section-header.has-bottom-sep::before {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.s-about-dark .section-header.has-bottom-sep::before {
     background-color: rgba(255, 255, 255, 0.25);
 }
 
@@ -2213,7 +2225,7 @@ html.no-csstransitions .home-content__main {
     font-size: 2.4rem;
     line-height: 1.75;
     text-align: center;
-    max-width: 1024px;
+    /*max-width: 1024px;*/
 }
 
 
@@ -2315,7 +2327,7 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 600px) {
-    .s-about {
+    .s-about, .s-about-dark {
         padding-top: 12rem;
     }
     .about-desc {

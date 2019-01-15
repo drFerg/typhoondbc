@@ -168,6 +168,29 @@
         <div class="row about-desc" data-aos="fade-up">
           <div class="col-full">
             <iframe class="fb-embed" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ftyphoondbc%2Fvideos%2F10156402333774925%2F&show_text=0&width=560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+           
+          </div>
+        </div>
+
+        <div class="about__line"></div>
+
+    </section> <!-- end s-about -->
+
+    <!-- about
+    ================================================== -->
+<section id='about' class="s-about-dark">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">What we get up to...</h3>
+                <h1 class="display-2 display-2--light">On and off the boat</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+
+
+        <div class="row about-desc" data-aos="fade-up">
+          <div class="col-full">
 <section id="services" class="front-page-section">
 
             <div class="section-content">
@@ -175,26 +198,60 @@
             <div class="row inline-columns">
             <div id="illdy_service-3" class="col-sm-4">
                 <div class="service">
-                    <div class="service-icon"><i class="fas fa-3x fa-water"></i></div><!--/.service-icon-->
+                    <div class="service-icon"><i class="fas fa-2x fa-medal"></i></div><!--/.service-icon-->
                     <div class="service-title"><h3>Paddling</h3></div><!--/.service-title-->
-                    <div class="service-entry">We paddle hard throughout the year, win races and take home trophies. We are an all season team, paddling rain, sun, snow or typhoon...</div><!--/.service-entry-->
+                    <div class="service-entry">We paddle hard throughout the year, win races and take home trophies. We are an all season team, paddling through rain, sun, snow or even a typhoon...</div><!--/.service-entry-->
                 </div><!--/.service-->
             </div>
 
             <div id="illdy_service-4" class="col-sm-4">
                 <div class="service">
-                    <div class="service-icon"><i class="fas fa-3x fa-utensils"></i></div><!--/.service-icon-->
+                    <div class="service-icon"><i class="fas fa-2x fa-bullhorn"></i></div><!--/.service-icon-->
+                    <div class="service-title"><h3>Coaching</h3></div><!--/.service-title-->
+                    <div class="service-entry">Whether you want to learn a new skill, shave off a few kilos or go for gold with the GB squad, our coaches will train you to be one of the best!</div><!--/.service-entry-->
+                </div><!--/.service-->
+                
+            </div>
+            <div id="illdy_service-5" class="col-sm-4">
+                <div class="service">
+                    <div class="service-icon">
+                        <i class="fas fa-2x fa-globe-europe"></i>
+                    </div><!--/.service-icon-->
+                    <div class="service-title"><h3>Travel</h3></div><!--/.service-title-->
+                    <div class="service-entry">We love to paddle at home, but we love to paddle abroad even more. We organise international trips throughout the season. Past trips include China, Hong Kong, Italy, Germany, Malaysia, Spain...</div><!--/.service-entry-->
+                </div><!--/.service-->
+            </div>
+        </div><!--/.row-->
+
+        <div class="row about-desc" data-aos="fade-up">
+          <div class="col-full">
+<section id="services" class="front-page-section">
+
+            <div class="section-content">
+            <div class="container">
+            <div class="row inline-columns">
+            <div id="illdy_service-3" class="col-sm-4">
+                <div class="service">
+                    <div class="service-icon"><i class="fas fa-2x fa-utensils"></i></div><!--/.service-icon-->
                     <div class="service-title"><h3>Dim Sum</h3></div><!--/.service-title-->
                     <div class="service-entry">We love to wind down after a hard paddle at our local dim sum joint, breaking bao and sharing stories.</div><!--/.service-entry-->
+                </div><!--/.service-->
+            </div>
+
+            <div id="illdy_service-4" class="col-sm-4">
+                <div class="service">
+                    <div class="service-icon"><i class="fas fa-2x fa-users"></i></div><!--/.service-icon-->
+                    <div class="service-title"><h3>Social</h3></div><!--/.service-title-->
+                    <div class="service-entry">We believe the key to a fast boat are strong bonds, so we organise regular gatherings off the water to strengthen the team and have celebrated many birthdays and celebrations. This is also how we sneakily recruit our non-dragonboat friends...</div><!--/.service-entry-->
                 </div><!--/.service-->
             </div>
             <div id="illdy_service-5" class="col-sm-4">
                 <div class="service">
                     <div class="service-icon">
-                        <i class="fas fa-3x fa-globe-europe"></i>
+                        <i class="fas fa-2x fa-briefcase"></i>
                     </div><!--/.service-icon-->
-                    <div class="service-title"><h3>Travel</h3></div><!--/.service-title-->
-                    <div class="service-entry">We love to paddle at home, but we love to paddle abroad even more. We organise international trips throughout the season. Past trips include China, Hong Kong, Italy, Germany, Malaysia, Spain...</div><!--/.service-entry-->
+                    <div class="service-title"><h3>Corporate</h3></div><!--/.service-title-->
+                    <div class="service-entry">We love to spread the dragonboat fever and </div><!--/.service-entry-->
                 </div><!--/.service-->
             </div>
         </div><!--/.row-->
@@ -205,11 +262,8 @@
           </div>
         </div>
 
-        <div class="about__line"></div>
 
     </section> <!-- end s-about -->
-
-
     <!-- works
     ================================================== -->
     <section id='works' class="s-works">
@@ -307,6 +361,8 @@
                             London<br>
                             A 2 minute walk from Royal Albert DLR<br>
                         </p>
+                        <div id="map"></div>
+
                     </div>
 
                     <div class="cinfo">
@@ -439,6 +495,224 @@
             template: '<div class="card bg-dark insta-card"><a class="insta" href="{{link}}"><img class="card-img insta-img" src="{{image}}" /></a></div>'
         });
         feed.run();
+    </script>
+
+
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNKuT2fKTVa5JtSQwUkYxUjrBrXp5BX6w&libraries=places"></script>
+
+    <script>
+
+        var map;
+        var infowindow = new google.maps.InfoWindow();
+        function initialize() {
+          // Create a map centered in Pyrmont, Sydney (Australia).
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 51.5076919, lng: 0.0393486},
+            zoom: 15,
+            styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+          });
+
+          // Search for Google's office in Australia.
+          var request = {
+            location: map.getCenter(),
+            radius: '500',
+            query: 'Typhoon Dragon Boat Club'
+          };
+
+          var service = new google.maps.places.PlacesService(map);
+          service.textSearch(request, callback);
+        }
+
+        // Checks that the PlacesServiceStatus is OK, and adds a marker
+        // using the place ID and location from the PlacesService.
+        function callback(results, status) {
+          if (status == google.maps.places.PlacesServiceStatus.OK) {
+            var marker = new google.maps.Marker({
+              map: map,
+              place: {
+                placeId: results[0].place_id,
+                location: results[0].geometry.location
+              }
+            });
+          }
+          google.maps.event.addListener(marker, 'click', function() {
+              infowindow.setContent('<div class="map-info"><strong>' + results[0].name + '</strong><br>' +
+                'Place ID: ' + results[0].place_id + '<br>' +
+                results[0].formatted_address + '</div>');
+              infowindow.open(map, this);
+            });
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+      function initMap() {
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.674, lng: -73.945},
+          zoom: 12,
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+        });
+      }
     </script>
       
 </body>

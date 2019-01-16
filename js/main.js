@@ -118,6 +118,7 @@
                     $size = $thumbLink.data('size').split('x'),
                     $width  = $size[0],
                     $height = $size[1];
+                    console.log($width);
          
                 var item = {
                     src  : $href,
@@ -199,7 +200,9 @@
         containerBricks.imagesLoaded(function () {
             containerBricks.masonry({
                 itemSelector: '.masonry__brick',
-                resize: true
+                //resize: true
+                columnWidth: '.grid-sizer',
+                percentPosition: true
             });
         });
     };

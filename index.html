@@ -183,7 +183,7 @@
         </div> -->
 
          <div class="row about-desc" data-aos="fade-up">
-          <div class="col-full masonry-wrap" style="height:2700px;">
+          <div class="col-full masonry-wrap" >
             <div class="masonry" >
                 <div class="grid-sizer"></div>
 
@@ -523,7 +523,7 @@
             <div class="section-content">
                 <div class="container">
 
-                <div class="row inline-columns block-1-3" data-aos="fade-left">
+                <div class="row inline-columns block-1-3 block-mob-full" data-aos="fade-left">
                     <div id="illdy_service-3" class="col-block" >
                         <div class="service">
                             <div class="service-icon"><i class="fas fa-2x fa-medal"></i></div><!--/.service-icon-->
@@ -553,7 +553,7 @@
 
 
 
-            <div class="row inline-columns block-1-3" data-aos="fade-right">
+            <div class="row inline-columns block-1-3 block-mob-full" data-aos="fade-right">
                 <div id="illdy_service-3" class="col-block">
                     <div class="service">
                         <div class="service-icon"><i class="fas fa-2x fa-utensils"></i></div><!--/.service-icon-->
@@ -791,7 +791,7 @@
             clientId: ' 8fef46e6c3d2496385fc281d96726423',
             accessToken: '4279376981.8fef46e.b7a43222a61642d5afcd8d39478d73d7',
             resolution: 'standard_resolution',
-            template: '<li class="card bg-dark insta-card" data-src="{{image}}" data-thumb="{{image}}"><img class="card-img insta-img" src="{{image}}" /></li>',
+            template: '<li class="card bg-dark insta-card" data-src="{{image}}" data-thumb="{{image}}"><img class="card-img insta-img" src="{{image}}" /> <a href="{{link}}"><i class="fab fa-instagram"></i></a></li>',
             after: function () {
                     $('#instafeed').lightSlider({
                         auto: false,
@@ -800,8 +800,25 @@
                         loop:true,
                         thumbItem:9,
                         slideMargin:0,
-                        enableDrag: false,
+                        enableDrag: true,
                         currentPagerPosition:'left',
+                        responsive : [
+                        {
+                            breakpoint:800,
+                            settings: {
+                                item:3,
+                                slideMove:1,
+                                slideMargin:6,
+                              }
+                        },
+                        {
+                            breakpoint:480,
+                            settings: {
+                                item:1,
+                                slideMove:1
+                              }
+                        }
+                        ],
                         onSliderLoad: function(el) {
                             el.lightGallery({
                                 selector: '#instafeed .lslide'

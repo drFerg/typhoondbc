@@ -41,15 +41,28 @@
   margin-right: .5%;
   margin-bottom: .5%;
 }
-/*.insta-img {
-  width: 270px;
-}*/
+
+.insta-card {
+  position:relative;
+}
+
+.insta-card a{
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.insta-card:hover a{
+  transform:scale(1.5, 1.5);
+}
 
 .lightSlider .insta-card{
   display: inline-block;
   vertical-align: middle;
   float:none;
 }
+
 @media (min-width: 300px) {
     .card-columns {
         column-count: 2;
@@ -191,3 +204,5 @@ margin-top: 0;
 .grid-sizer,
 .masonry__brick { width: 50%; }
 .grid-item--width2 { width: 100%; }
+
+

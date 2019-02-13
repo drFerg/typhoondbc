@@ -10,7 +10,8 @@ if($_POST) {
     $email = trim(stripslashes($_POST['contactEmail']));
     $subject = trim(stripslashes($_POST['contactSubject']));
     $contact_message = trim(stripslashes($_POST['contactMessage']));
-
+    $error = "";
+    
     // Check Name
     if (strlen($name) < 2) {
         $error['name'] = "Please enter your name.";

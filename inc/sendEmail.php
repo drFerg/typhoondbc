@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$siteOwnersEmail = 'fergus.leahy@typhoon-dbc.com';
+$siteOwnersEmail = 'info@typhoon-dbc.com';
 
 
 if($_POST) {
@@ -24,15 +24,15 @@ if($_POST) {
         $error['message'] = "Please enter your message. It should have at least 15 characters.";
     }
     // Subject
-    if ($subject == '') { $subject = "Contact Form Submission"; }
+    if ($subject == '') { $subject = "typhoon-dbc.com: Contact Form Submission"; }
 
 
     // Set Message
-    $message .= "Email from: " . $name . "<br />";
+    $message  = "Email from: " . $name . "<br />";
     $message .= "Email address: " . $email . "<br />";
     $message .= "Message: <br />";
     $message .= $contact_message;
-    $message .= "<br /> ----- <br /> This email was sent from your site's contact form. <br />";
+    $message .= "<br /> ----- <br /> This email was sent from your Typhoon's contact form. <br />";
 
     // Set From: header
     $from =  $name . " <" . $email . ">";
